@@ -2,3 +2,10 @@ require 'autotest/growl'
 if RUBY_PLATFORM =~ /darwin/ 
   require 'autotest/fsevent'
 end
+
+Autotest.add_hook :initialize do |autotest|
+  autotest.add_mapping(/^spec\/requests\/.*_spec\.rb$/) do
+    autotest.files_matching(/^spec\/requests\/.*_spec\.rb$/)
+  end
+end
+
