@@ -11,5 +11,7 @@ group :test do
   gem 'rspec', '2.5.0'
   gem 'webrat', '0.7.1'
   gem 'spork', '0.9.0.rc4'
+  gem 'ZenTest', '4.5.0'
+  gem 'autotest-growl', '0.2.9'
 end
 
